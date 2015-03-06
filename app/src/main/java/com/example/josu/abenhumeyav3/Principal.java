@@ -58,6 +58,18 @@ public class Principal extends Activity {
         bd= Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), getExternalFilesDir(null) + "/abenhumeya.db4o");
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        bd.close();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        bd.close();
+    }
+
     //Con este método guardamos lo que necesitamos para cargar de nuevo la Activity al girar la pantalla.
     @Override
     protected void onSaveInstanceState(Bundle outState) {
@@ -269,12 +281,6 @@ public class Principal extends Activity {
     public void tostada(String cad){
         //Comentario
         Toast.makeText(this, cad, Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        bd.close();
     }
 
     public void cargarBD(){

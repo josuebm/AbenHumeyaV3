@@ -40,6 +40,7 @@ public class VerPedido extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        bd= Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), getExternalFilesDir(null) + "/abenhumeya.db4o");
         setContentView(R.layout.activity_ver_pedido);
         initComponents();
     }
@@ -48,7 +49,6 @@ public class VerPedido extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.ver_pedido, menu);
-        bd= Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), getExternalFilesDir(null) + "/abenhumeya.db4o");
         return true;
     }
 
