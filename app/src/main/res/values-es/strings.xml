@@ -2,7 +2,7 @@
 <resources>
 
     <!--Nombre de la aplicación-->
-    <string name="app_name">AbenHumeya</string>
+    <string name="app_name">Aben Humeya</string>
 
     <!--Texto de las tostadas-->
     <string name="ttEliminado">Eliminado</string>

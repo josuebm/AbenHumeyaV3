@@ -1,8 +1,37 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="@style/_AppTheme" />
+
+    <style name="_AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+
+        <item name="android:dropDownSpinnerStyle">@style/SpinnerAppTheme</item>
+
+        <item name="android:listChoiceBackgroundIndicator">
+            @drawable/apptheme_list_selector_holo_light
+        </item>
+
+        <item name="android:activatedBackgroundIndicator">
+            @drawable/apptheme_activated_background_holo_light
+        </item>
+
+        <item name="android:scrollbarThumbVertical">@drawable/apptheme_fastscroll_thumb_holo</item>
+
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+
+    </style>
+
+    <style name="SpinnerAppTheme" parent="android:Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/apptheme_spinner_background_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/apptheme_list_selector_holo_light</item>
+    </style>
+
+    <style name="MyActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/apptheme_color</item>
     </style>
 
 </resources>

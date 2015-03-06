@@ -8,8 +8,7 @@
     <ImageView
         android:layout_width="82dp"
         android:layout_height="71dp"
-        android:id="@+id/ivMesa"
-        android:background="#ff000000" />
+        android:id="@+id/ivMesa" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -23,7 +22,8 @@
             android:id="@+id/tvMesa"
             android:textSize="15sp"
             android:paddingLeft="5dp"
-            android:paddingTop="2dp" />
+            android:paddingTop="2dp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,6 +40,8 @@
             android:id="@+id/tvHora"
             android:text="@string/tvHora"
             android:paddingLeft="5dp"
-            android:paddingTop="2dp" />
+            android:paddingTop="2dp"
+            android:textStyle="italic"
+            android:textColor="#ff999999" />
     </LinearLayout>
 </LinearLayout>
