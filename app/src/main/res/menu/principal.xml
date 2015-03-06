@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Principal">
+
+    <item
+        android:id="@+id/action_cargar"
+        android:title="@string/action_cargar"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_anadir"
+        android:title="@string/action_anadir"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="ifRoom" />
+
+</menu>
